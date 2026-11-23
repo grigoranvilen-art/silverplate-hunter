@@ -75,7 +75,8 @@ dialog{padding:0;border:1px solid var(--edge);border-radius:14px;width:min(890px
 <script src="gallery-2.js"></script>
 <script src="gallery-3.js"></script>
 <script src="gallery-4.js"></script>
-<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]);
+<script src="gallery-addition.js"></script>
+<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition);
 const get = id => document.getElementById(id);
 const labels = { tea:'Чай и кофе', tray:'Подносы', fruit:'Фруктовницы', bowl:'Чаши',
   candle:'Подсвечники', rare:'Редкие приборы', serve:'Сервировка', flatware:'Приборы',
