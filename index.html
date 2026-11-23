@@ -82,7 +82,10 @@ dialog{padding:0;border:1px solid var(--edge);border-radius:14px;width:min(890px
 <script src="gallery-batch-4.js"></script>
 <script src="gallery-batch-5.js"></script>
 <script src="gallery-batch-6.js"></script>
-<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition, Array.from({length:45}, (_, i) => [galleryBatch1,galleryBatch2,galleryBatch3,galleryBatch4,galleryBatch5,galleryBatch6][i%6][Math.floor(i/6)]));
+<script src="tableware-1.js"></script>
+<script src="tableware-2.js"></script>
+<script src="tableware-3.js"></script>
+<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition, Array.from({length:45}, (_, i) => [galleryBatch1,galleryBatch2,galleryBatch3,galleryBatch4,galleryBatch5,galleryBatch6][i%6][Math.floor(i/6)])).concat(Array.from({length:20}, (_, i) => [tablewarePart1,tablewarePart2,tablewarePart3][i%3][Math.floor(i/3)]));
 const get = id => document.getElementById(id);
 const labels = { tea:'Чай и кофе', tray:'Подносы', fruit:'Фруктовницы', bowl:'Чаши',
   candle:'Подсвечники', rare:'Редкие приборы', serve:'Сервировка', flatware:'Приборы',
