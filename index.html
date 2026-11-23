@@ -76,7 +76,13 @@ dialog{padding:0;border:1px solid var(--edge);border-radius:14px;width:min(890px
 <script src="gallery-3.js"></script>
 <script src="gallery-4.js"></script>
 <script src="gallery-addition.js"></script>
-<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition);
+<script src="gallery-batch-1.js"></script>
+<script src="gallery-batch-2.js"></script>
+<script src="gallery-batch-3.js"></script>
+<script src="gallery-batch-4.js"></script>
+<script src="gallery-batch-5.js"></script>
+<script src="gallery-batch-6.js"></script>
+<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition, Array.from({length:45}, (_, i) => [galleryBatch1,galleryBatch2,galleryBatch3,galleryBatch4,galleryBatch5,galleryBatch6][i%6][Math.floor(i/6)]));
 const get = id => document.getElementById(id);
 const labels = { tea:'Чай и кофе', tray:'Подносы', fruit:'Фруктовницы', bowl:'Чаши',
   candle:'Подсвечники', rare:'Редкие приборы', serve:'Сервировка', flatware:'Приборы',
