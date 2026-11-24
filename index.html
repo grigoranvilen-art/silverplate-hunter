@@ -86,7 +86,15 @@ dialog{padding:0;border:1px solid var(--edge);border-radius:14px;width:min(890px
 <script src="tableware-2.js"></script>
 <script src="tableware-3.js"></script>
 <script src="tableware-selection.js"></script>
-<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition, Array.from({length:45}, (_, i) => [galleryBatch1,galleryBatch2,galleryBatch3,galleryBatch4,galleryBatch5,galleryBatch6][i%6][Math.floor(i/6)])).concat(Array.from({length:20}, (_, i) => [tablewarePart1,tablewarePart2,tablewarePart3][i%3][Math.floor(i/3)])).concat(tablewareSelection);
+<script src="tableware-recheck-1.js"></script>
+<script src="tableware-recheck-2.js"></script>
+<script src="tableware-recheck-3.js"></script>
+<script src="tableware-recheck-4.js"></script>
+<script src="tableware-recheck-5.js"></script>
+<script src="tableware-recheck-6.js"></script>
+<script src="tableware-recheck-7.js"></script>
+<script src="tableware-recheck-8.js"></script>
+<script>const catalogItems = Array.from({length:46}, (_, i) => [galleryPart1,galleryPart2,galleryPart3,galleryPart4][i%4][Math.floor(i/4)]).concat(galleryAddition, Array.from({length:45}, (_, i) => [galleryBatch1,galleryBatch2,galleryBatch3,galleryBatch4,galleryBatch5,galleryBatch6][i%6][Math.floor(i/6)])).concat(Array.from({length:20}, (_, i) => [tablewarePart1,tablewarePart2,tablewarePart3][i%3][Math.floor(i/3)])).concat(tablewareSelection).concat(tablewareRecheck1,tablewareRecheck2,tablewareRecheck3,tablewareRecheck4,tablewareRecheck5,tablewareRecheck6,tablewareRecheck7,tablewareRecheck8);
 const get = id => document.getElementById(id);
 const labels = { tea:'Чай и кофе', tray:'Подносы', fruit:'Фруктовницы', bowl:'Чаши',
   candle:'Подсвечники', rare:'Редкие приборы', serve:'Сервировка', flatware:'Приборы',
